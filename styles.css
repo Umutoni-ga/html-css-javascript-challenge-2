@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 20px;
+}
+.parent {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+    padding: 20px;
+    padding-top: 80px;
+    width: 100%;
+}
+img {
+	height: 100%;
+	width: 100%;
+}
+.logo {
+	width: 80px;
+	padding-bottom: 30px;
+}
+h1 {
+	font-size: 45px;
+	font-weight: 300;
+	color: hsl(0, 0%, 59%);
+	margin-bottom: 3px;
+}
+h1 span {
+	font-weight: 700;
+	color: hsl(209, 33%, 12%);
+}
+h2 {
+	color: hsl(209, 33%, 12%);
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+form {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 30px;
+	padding-top: 0px;
+	width: 100%;
+	position: relative;
+}
+.input {
+	height: 50px;
+	width: 100%;
+	border-radius: 40px;
+	border: 2px solid hsl(223, 100%, 88%);
+	padding-left: 30px;
+	font-size: 15px;
+	outline: none;
+}
+.input::placeholder {
+	color: hsl(223, 100%, 88%);
+}
+.btn {
+	background-color: hsl(223, 87%, 63%);
+	box-shadow: 0px 0px 20px hsla(223, 87%, 63%, 0.3);
+	width: 100%;
+	height: 50px;
+	border: none;
+	color: white;
+	font-size: 16px;
+	font-family: 'Libre Franklin', sans-serif;
+	border-radius: 40px;
+	cursor: pointer;
+	outline: none;
+	margin-top: 20px;
+}
+.error {
+	border: 1px solid hsl(354, 100%, 66%);
+	margin-bottom: 40px;
+}
+.error_text {
+	position: absolute;
+	right: 34%;
+	top: 22%;
+	left: 30px;
+	font-size: 13px;
+	color: hsl(354, 100%, 66%);
+	font-style: italic;
+}
+.illustration {
+	max-width: 730px;
+}
+.icons {
+	margin-top: 200px;
+	margin-bottom: 40px;
+}
+.icons i {
+	margin: 0 10px;
+}
+.fab{
+	background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+	border: 1px solid hsl(223, 100%, 88%);
+	padding: 12px;
+	color:hsl(223, 87%, 63%);
+	font-size: 25px;
+}
+.copyright {
+	font-size: 15px;
+	margin-top: 5px;
+	color: hsl(0, 0%, 59%);
+}
+@media only screen and (max-width: 539px) {
+	.error_text{
+		right: 22%;
+		top: 22%;
+	}
+}
+@media only screen and (min-width: 650px) {
+	form {
+		flex-direction: row;
+		max-width: 730px;
+		margin-bottom: 65px;
+	}
+	.btn{
+		margin: 0;
+		width: 45%;
+		margin-left: 10px;
+	}
+	.error{
+		margin-bottom: 0;
+	}
+	.error_text{
+		right: 48%;
+		top: 48%;
+	}
+}
